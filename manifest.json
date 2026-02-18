@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub Agents Tab Remover",
+  "short_name": "No Agents Tab",
+  "version": "1.1.0",
+  "description": "Hides the Agents tab on GitHub repository pages.",
+  "minimum_chrome_version": "114",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "github-agents-tab-remover",
+  "version": "1.1.0",
+  "description": "Chrome extension that hides the Agents tab on GitHub repository pages.",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "check": "node --check content.js && python3 -m json.tool manifest.json >/dev/null",
+    "test": "node --test content.test.js"
+  }
+}
